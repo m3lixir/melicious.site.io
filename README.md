@@ -1,131 +1,49 @@
-# [💻 LiveTerm - build terminal styled websites in minutes!](https://liveterm.vercel.app)
+=======================================================================
+|                        VulnCorp Database README                     |
+|                            OFFICIAL USE ONLY                        |
+=======================================================================
+| Introduction:                                                       |
+| The VulnCorp Database is a highly secure digital repository         |
+| designed for the storage and retrieval of sensitive information     |
+| pertaining to the assets, operations, and strategic initiatives of  |
+| VulnCorp. This database includes detailed dossiers on VulnCorp      |
+| operatives, mission briefings, operational strategies, and          |
+| intelligence reports.                                               |
+-----------------------------------------------------------------------
+| Contents:                                                           |
+| - **Operative Dossiers**: Profiles of all active and inactive       |
+|   agents, including background, skills, and mission histories.      |
+| - **Mission Briefings**: Detailed briefs outlining objectives,      |
+|   operational parameters, and execution strategies for ongoing and  |
+|   completed missions.                                               |
+| - **Strategic Documents**: Insights into overarching strategies     |
+|   and long-term goals of VulnCorp, including technological          |
+|   advancements and sector dominance plans.                          |
+| - **Intelligence Reports**: Accumulated intelligence on rivals,     |
+|   threats, and opportunities, collected from a variety of covert    |
+|   sources and reconnaissance activities.                            |
+-----------------------------------------------------------------------
+| Access:                                                             |
+| Access to the VulnCorp Database is restricted to authorized         |
+| personnel only. All access attempts are logged, and unauthorized    |
+| access will trigger immediate security protocols. Users are         |
+| required to authenticate using multi-factor authentication and are  |
+| subject to continuous behavior-based security monitoring.           |
+-----------------------------------------------------------------------
+| Usage Guidelines:                                                   |
+| - **Querying Information**: Use provided commands and query         |
+|   guidelines to retrieve information. Unauthorized manipulation of  |
+|   data is strictly prohibited.                                      |
+| - **Updating Records**: Authorized users must follow standard       |
+|   protocols for updating records. All changes are subject to audit. |
+| - **Confidentiality**: Maintain the highest level of confidentiality|
+|   regarding all data within the database. Disclosure to non-authorized|
+|   individuals is a violation of VulnCorp policy and may result in   |
+|   legal action or termination.                                      |
+-----------------------------------------------------------------------
+| Support:                                                            |
+| For technical support or to report a security concern, contact the  |
+| VulnCorp IT Security Team via the internal support portal or direct |
+| encrypted communication channels.                                   |
+=======================================================================
 
-Highly customizable, easy-to-use, and minimal terminal styled website template, powered by Next.js.
-
-Building a simple website with LiveTerm only takes **minutes**, and you only need to work with **one** file: `config.json`. After you cloned this repository, simply run `yarn install && yarn dev` and start editing `config.json` to build your website!
-
-LiveTerm can be used to build a variety of websites:
-
-- [personal website](https://cveinnt.com)
-- [browser startpage](https://livetermstart.vercel.app/)
-- [project page](https://liveterm.vercel.app/)
-- or maybe just a cool browser music player...be creative!
-
-Feel free to play with the web demo above!
-
-## 📸 Showcase
-
-<p align="center">
-<img src="./demo/demo.gif" width="600"><br>
-<strong>LiveTerm with different themes</strong>
-</p>
-
-<p align="center">
-<img src="./demo/cveinnt.png" width="600"><br>
-<strong><a href="https://cveinnt.com" target=_blank>my personal website</a></strong>
-</p>
-
-## 🚀 Ship your LiveTerm site in less than 5 minutes
-
-LiveTerm requires the `yarn` package manager. You can install `yarn` [here](https://classic.yarnpkg.com/lang/en/docs/install/).
-
-Simply run the following commmand in your terminal:
-
-```bash
-sh -c "$(curl -fsSL https://raw.github.com/Cveinnt/LiveTerm/main/install/install.sh)"
-```
-
-This will install LiveTerm to the current directory. You can start building your website with:
-
-```bash
-cd LiveTerm && yarn dev
-```
-
-Start editing `config.json` and try saving and see the updated changes!
-
-Alternatively, you can clone this repository to a location of your choosing
-
-```bash
-git clone https://github.com/Cveinnt/LiveTerm.git && cd LiveTerm
-```
-
-Then install dependencies and start developing there:
-
-```bash
-yarn install && yarn dev
-```
-
-### Docker Usage
-
-First, clone the project and edit `config.json` to your liking. Then run the following to start the container in the background:
-
-```shell
-docker-compose up -d
-```
-
-If you **know** what you were doing, you can also try changing `Dockerfile` & `docker-compose.yml`!
-Learn more about Docker [here](https://docs.docker.com/get-started/overview/ 'here').
-
-## 📄 Configuration
-
-### Basic Configuration
-
-90% of LiveTerm's configurations are done through the `config.json` file.
-
-```javascript
-{
-  "readmeUrl": // create a Github README and link it here!
-  "title": // title of the website
-  "name": // your name, included in 'about' command
-  "ascii": // ascii art to display
-  "social": {
-    "github": // your handle
-    "linkedin": // your handle
-  },
-  "email": // your email
-  "ps1_hostname": "liveterm" // hostname in prompt
-  "ps1_username": "visitor", // username in prompt
-  "resume_url": "../resume.pdf", // path to your resume
-  "non_terminal_url": "W",
-  "colors": {
-    "light": {
-      ...
-    },
-    "dark": {
-      ... // you can use existing templates in themes.json or use your own!
-    }
-  }
-}
-```
-
-Feel free to change it as you see fit!
-
-### Themes
-
-You can find several pre-configured themes in `themes.json`, and you can replace the colors in `config.json` with the theme color you like! The themes are based on the themes on [this website](https://glitchbone.github.io/vscode-base16-term/#/).
-
-For a better preview of the themes, checkout the images in the `demo` folder.
-
-### Favicons
-
-Favicons are located in `public/`, along with the other files you may want to upload to your website. I used this [website](https://www.favicon-generator.org/) to generate favicons.
-
-### Banner
-
-You may also want to change the output of the `banner` command. To do that, simply paste your generated banner in `src/utils/bin/commands.ts`. I used this [website](https://manytools.org/hacker-tools/ascii-banner/) to generate my banner.
-
-### Advanced Configuration
-
-If you want to further customize your page, feel free to change the source code to your liking!
-
-## 🌐 Deploy on Vercel
-
-The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/) from the creators of Next.js.
-
-You can install `vercel` cli and follow the instruction [here](https://vercel.com/docs/concepts/deployments/overview).
-
-You can also connect your github account to vercel and have vercel automatically deploy the github repository for you.
-
-## Credit
-
-Based on M4TT72's awesome [Terminal](https://github.com/m4tt72/terminal).
